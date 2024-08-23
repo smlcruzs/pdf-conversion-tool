@@ -15,9 +15,12 @@ Crie um ambiente virtual e ative:
     venv\Scripts\activate  # Windows
     
 Instale as dependências:
-  pip install -r requirements.txt
+    
+    pip install -r requirements.txt
+    
 Certifique-se de que o Tesseract está instalado e configurado no PATH:
-  C:\Program Files\Tesseract-OCR\
+     
+      C:\Program Files\Tesseract-OCR\
 
   ## Uso
 1. Execute a aplicação:
