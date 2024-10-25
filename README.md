@@ -1,42 +1,40 @@
 Samuel Cruz | smlcruzs@gmail.com | https://github.com/smlcruzs
 
-
 # pdf-conversion-tool
-Uma ferramenta Flask para transformar PDFs de leitura de imagem em PDFs editáveis e copiáveis usando Tesseract OCR.
-## Instalação
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/usuario/nome-do-repositorio.git
-   cd nome-do-repositorio
-Crie um ambiente virtual e ative:
+A Flask tool to transform image-readable PDFs into editable and copyable PDFs using Tesseract OCR. ## Installation
+1. Clone the repository:
+```bash
+git clone https://github.com/user/repository-name.git
+cd repository-name
+Create a virtual environment and activate:
 
-    python -m venv venv
-    source venv/bin/activate  # Linux/Mac    
-    venv\Scripts\activate  # Windows
-    
-Instale as dependências:
-    
-    pip install -r requirements.txt
-    
-Certifique-se de que o Tesseract está instalado e configurado no PATH:
-     
-      C:\Program Files\Tesseract-OCR\
+python -m venv venv
+source venv/bin/activate # Linux/Mac
+venv\Scripts\activate # Windows
 
-  ## Uso
-1. Execute a aplicação:
-   ```bash
-   flask run
+Install the dependencies:
 
-   ## Tecnologias Utilizadas
+pip install -r requirements.txt
+
+Make sure Tesseract is installed and configured in the PATH:
+
+C:\Program Files\Tesseract-OCR\
+
+## Usage
+1. Run the application:
+```bash
+flask run
+
+## Technologies Used
 - Python
 - Flask
 - PyMuPDF
 - ReportLab
 - Tesseract OCR
 
-## Funcionalidades
-- Converte PDFs com imagens em PDFs editáveis usando OCR.
-- Mantém o layout original do PDF.
+## Features
+- Converts PDFs with images into editable PDFs using OCR.
+- Keeps the original PDF layout.
 
-## Contribuição
-Sinta-se à vontade para enviar pull requests ou abrir issues para melhorias.
+## Contribution
+Feel free to submit pull requests or open issues for improvements.
