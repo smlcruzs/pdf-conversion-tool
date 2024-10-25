@@ -4,8 +4,8 @@ Samuel Cruz | smlcruzs@gmail.com | https://github.com/smlcruzs
 A Flask tool to transform image-readable PDFs into editable and copyable PDFs using Tesseract OCR. ## Installation
 1. Clone the repository:
    ```bash
-git clone https://github.com/user/repository-name.git
-cd repository-name
+  git clone https://github.com/user/repository-name.git
+  cd repository-name
 Create a virtual environment and activate:
 
 python -m venv venv
@@ -23,7 +23,7 @@ C:\Program Files\Tesseract-OCR\
 ## Usage
 1. Run the application:
    ```bash
-flask run
+  flask run
 
 ## Technologies Used
 - Python
