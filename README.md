@@ -4,7 +4,7 @@ Samuel Cruz | smlcruzs@gmail.com | https://github.com/smlcruzs
 A Flask tool to transform image-readable PDFs into editable and copyable PDFs using Tesseract OCR. ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/user/repository-name.git
+   git clone https://github.com/user/pdf-conversion-tool
   cd repository-name
 Create a virtual environment and activate:
 
