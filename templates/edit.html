@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Data</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 5px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #007bff;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Edit Data</h1>
+    {% if message %}
+        <p>{{ message }}</p>
+    {% endif %}
+    <form action="/edit" method="post">
+        <table>
+            <thead>
+                <tr>
+                    {% for key in data[0].keys() %}
+                        <th>{{ key }}</th>
+                    {% endfor %}
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in data %}
+                    <tr>
+                        {% for key in row.keys() %}
+                            <td><input type="text" name="data[{{ loop.index0 }}][{{ key }}]" value="{{ row[key] }}"></td>
+                        {% endfor %}
+                    </tr>
+                {% endfor %}
+                <tr>
+                    {% for key in data[0].keys() %}
+                        <td><input type="text" name="new_row[{{ key }}]" placeholder="New {{ key }}"></td>
+                    {% endfor %}
+                </tr>
+            </tbody>
+        </table>
+        <input type="submit" value="Save Changes" class="button">
+    </form>
+    <a href="/" class="button">Back to Upload</a>
+    <a href="/download" class="button">Download Updated File</a>
+</body>
+</html>
